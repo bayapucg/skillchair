@@ -93,13 +93,12 @@ html {
     background: #ededed;
 }
 
-/*
 #mbl-menu ul li:hover > a:before {
     content: "\f023";
     position: absolute;
     right: 20px;
 }
-*/
+
 
 #mbl-menu ul ul {
     top: 0;
@@ -112,64 +111,3 @@ html {
 #mbl-menu ul ul ul li:hover > a:after {
     content: '';
 }*/
-@media screen and (max-width: 600px) {
-		
-		#mbl-menu ul {
-			position: relative;
-			visibility: hidden;
-			opacity: 0;
-			margin: 0;
-            width: 100%;			
-		}
-
-		#mbl-menu ul ul {
-			margin: 0 0 0 20px !important;
-			-moz-box-shadow: none;
-			-webkit-box-shadow: none;
-			box-shadow: none;		
-		}
-
-		#mbl-menu li {
-			position: static;
-			display: block;
-			float: none;
-			border: 0;
-			margin: 5px;
-			-moz-box-shadow: none;
-			-webkit-box-shadow: none;
-			box-shadow: none;			
-		}
-
-		#mbl-menu ul li{
-			margin-left: 20px;
-			-moz-box-shadow: none;
-			-webkit-box-shadow: none;
-			box-shadow: none;		
-		}
-
-		#mbl-menu a{
-			display: block;
-			float: none;
-			padding: 0;
-			color: #999;
-		}
-
-		#mbl-menu a:hover{
-			color: #fafafa;
-		}	
-
-		#mbl-menu ul a{
-			padding: 0;
-			width: auto;		
-		}
-
-		#mbl-menu ul a:hover{
-			background: none;	
-		}
-
-		#mbl-menu ul li:first-child a:after,
-		#mbl-menu ul ul li:first-child a:after {
-			border: 0;
-		}		
-
-	}
