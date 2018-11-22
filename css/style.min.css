@@ -95,11 +95,10 @@ html {
 
 #mbl-menu ul li:hover > a:before {
     content:"\f105";
-  font: normal normal normal 22px/1 FontAwesome;
-    right: 20px;
+    font: normal normal normal 22px/1 FontAwesome;
+    right: 10px;
 	position:absolute;
 }
-
 
 #mbl-menu ul ul {
     top: 0;
@@ -108,7 +107,192 @@ html {
     height: 100%;
 }
 
-/*
-#mbl-menu ul ul ul li:hover > a:after {
-    content: '';
-}*/
+/* Course Details & FAQ's =================================================================================================== */
+
+.category-details h3{
+    font-weight: 500;
+    padding-bottom: 10px;
+    color: #45526e;
+	position: relative;
+}
+
+.category-details h3:before {
+    content:"";
+	position:absolute;
+    bottom: 0;
+    border-bottom: 2px solid #3e6ac7;
+    width: 26%;
+}
+
+.cd-part-1 p{
+	font-weight: 400;
+}
+
+.cd-part-1 li{
+	font-weight: 400;
+}
+
+.cd-part-1 li:before{
+	content:"\f101";
+    font: normal normal normal 22px/1 FontAwesome;
+	font-size: 15px;
+	margin-right: 10px;
+}
+
+.cd-part-2{
+	background-color: #f8f8f8;
+}
+
+.cd-part-2 .form-control{
+	border-radius: 0rem !important;
+}
+
+.cd-part-2 .form-control:focus {
+    border-color: #fff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0);
+}
+	
+
+/* Course Details & FAQ's =================================================================================================== */
+
+.course-details .card-header, .faqs .card-header {
+    background-color: rgba(69, 82, 110, 0.65);
+	border-radius: 0px;
+}
+
+.course-details h3, .faqs h3{
+    font-weight: 500;
+    padding-bottom: 10px;
+    position: relative;
+    color: #45526e;
+}
+
+.course-details h6, .faqs h6{
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: #ffffff;
+}
+
+.course-details h3:before {
+    content:"";
+	position:absolute;
+    bottom: 0;
+    border-bottom: 2px solid #3e6ac7;
+    width: 24%;
+}
+
+.course-details h6:before {
+    content:"\f107";
+    font: normal normal normal 22px/1 FontAwesome;
+    right: 10px;
+	position:absolute;
+}
+
+.faqs h3:before {
+    content:"";
+	position:absolute;
+    bottom: 0;
+    border-bottom: 2px solid #3e6ac7;
+    width: 30%;
+}
+
+.faqs h6:before {
+    content:"\f055";
+    font: normal normal normal 22px/1 FontAwesome;
+    margin-right: 15px;
+}
+
+/* Feedback =================================================================================================== */
+
+.feedback h3{
+    font-weight: 500;
+    padding-bottom: 10px;
+    color: #45526e;
+	position: relative;
+}
+
+.feedback h3:before {
+    content:"";
+	position:absolute;
+    bottom: 0;
+    border-bottom: 2px solid #3e6ac7;
+    width: 24%;
+}
+
+.bg-f8f8f8{
+	background-color: #f8f8f8;
+}
+
+.feedback .media img{
+	height: 70px;
+	width: 70px;
+}
+
+.feedback .media span.comment{
+	font-weight: 400;
+}
+
+/* Reviews & Rating =================================================================================================== */
+
+.randr h3{
+    font-weight: 500;
+    padding-bottom: 10px;
+    color: #45526e;
+	position: relative;
+}
+
+.randr h3:before {
+    content:"";
+	position:absolute;
+    bottom: 0;
+    border-bottom: 2px solid #3e6ac7;
+    width: 13%;
+}
+
+.rating-div{
+	padding: 0px 15px;
+}
+
+.rating-div .ratings-percent{
+	background-color: #868ea1;
+}
+
+.ratings-percent h1{
+	font-weight: 500;
+	font-size: 70px;
+}
+
+.ratings-percent p{
+	font-weight: 500;
+	font-size: 20px;
+}
+
+.ratings-percent li{
+	margin-right: 0px !important;
+}
+
+.ratings-percent li i{
+	color: #fdb300;
+}
+
+/* Reviews & Rating =================================================================================================== */
+
+.trainees h3{
+    font-weight: 500;
+    padding-bottom: 10px;
+    color: #45526e;
+	position: relative;
+}
+
+.trainees h3:before {
+    content:"";
+	position:absolute;
+    bottom: 0;
+    border-bottom: 2px solid #3e6ac7;
+    width: 6%;
+}
+
+.trainee-logos img{
+	height: 70px;
+	width: 70px;
+}
