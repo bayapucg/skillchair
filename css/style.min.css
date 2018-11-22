@@ -94,9 +94,10 @@ html {
 }
 
 #mbl-menu ul li:hover > a:before {
-    content: "\f023";
-    position: absolute;
+    content:"\f105";
+  font: normal normal normal 22px/1 FontAwesome;
     right: 20px;
+	position:absolute;
 }
 
 
