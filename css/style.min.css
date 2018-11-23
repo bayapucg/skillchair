@@ -2,12 +2,23 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-/* Full Page Intro  & Navbar ===================================================================================== */
 p{
 	font-size:17px;
 	font-weight:400;
 	letter-spacing:0.14px;
 }
+
+
+.bg-f8f8f8{
+	background-color: #f8f8f8;
+}
+
+.bg-ffffff{
+	background-color: #ffffff;
+}
+
+/* Full Page Intro  & Navbar 
+===================================================================================== */
 
 .view,
 body,
@@ -117,12 +128,12 @@ html {
 #mbl-menu ul li a {
     padding: 10px;
     display: block;
-    color: #aa591e;
+    color: #59698d;
     font-weight: 400;
 }
 
 #mbl-menu ul li:hover {
-    border-left: 3px solid #aa591e;
+    border-left: 3px solid #59698d;
     background: #ededed;
 }
 
@@ -143,23 +154,37 @@ html {
 /* Category Header
 =================================================================================================== */
 
-.bg-fdf5e6{
-    background-color: #fdf5e6;
+.category-header{
+    background-image: url(../img/category-banner.jpg);
+    background-size: cover;
+}
+
+.ch-bg-overlay{
+    background-color: rgba(0, 0, 0, .6);
 }
 
 .category-header h3{
     font-weight: 500;
     padding-bottom: 10px;
-    color: #45526e;
+    color: #ffffff;
 	position: relative;
 }
 
 .category-header h5{
     font-weight: 400;
+    color: #f1f0f0;
+}
+
+.category-header-details li{
+    color: #f1f0f0;
 }
 
 .category-header-details .chd-rating-stars li{
     margin-right: 0px;
+}
+
+.category-header-details .chd-rating-stars li i{
+    color: #fdb300;
 }
 
 
@@ -322,18 +347,6 @@ html {
     bottom: 0;
     border-bottom: 2px solid #3e6ac7;
     width: 24%;
-}
-
-.bg-f8f8f8{
-	background-color: #f8f8f8;
-}
-
-.bg-ffffff{
-	background-color: #ffffff;
-}
-
-.bg-f8f8f8{
-    background-color: #f8f8f8;
 }
 
 .feedback .media img{
