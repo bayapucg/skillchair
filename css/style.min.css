@@ -20,7 +20,7 @@ html {
 }
 
 .top-nav-collapse {
-    background-color: #aa591e;
+    background-color: #59698d;
 }
 
 .navbar.navbar-dark .navbar-nav .nav-item .nav-link {
@@ -37,7 +37,7 @@ html {
 }
 
 .search-container .btn-default {
-    background-color: #aa591e !important;
+    background-color: #59698d !important;
 }
 
 .search-container .form-control:focus {
@@ -54,6 +54,34 @@ html {
         width: 100%;
     }
 }
+
+/* Enrollments
+===================================================================================================== */
+
+.enrollments .e-div{
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+
+.enrollments .e-div i{
+    color: #59698d;
+}
+
+.enrollments .e-div strong{
+    font-weight: 500;
+}
+
+.enrollments .e-div a{
+    color: #59698d;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+
+.enrollments .e-div a:hover{
+    text-decoration-line: underline;
+    text-decoration-color: #59698d;
+}
+
 
 /* Fixed Footer ===================================================================================================== */
 
@@ -107,7 +135,31 @@ html {
     height: 100%;
 }
 
-/* Course Details & FAQ's =================================================================================================== */
+/* Category Header
+=================================================================================================== */
+
+.bg-fdf5e6{
+    background-color: #fdf5e6;
+}
+
+.category-header h3{
+    font-weight: 500;
+    padding-bottom: 10px;
+    color: #45526e;
+	position: relative;
+}
+
+.category-header h5{
+    font-weight: 400;
+}
+
+.category-header-details .chd-rating-stars li{
+    margin-right: 0px;
+}
+
+
+/* Category Details
+=================================================================================================== */
 
 .category-details h3{
     font-weight: 500;
@@ -151,7 +203,24 @@ html {
     border-color: #fff;
     box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0);
 }
-	
+
+/* Course Schedule
+=================================================================================================== */
+
+.course-schedule h3{
+    font-weight: 500;
+    padding-bottom: 10px;
+    color: #45526e;
+	position: relative;
+}
+
+.course-schedule h3:before {
+    content:"";
+	position:absolute;
+    bottom: 0;
+    border-bottom: 2px solid #3e6ac7;
+    width: 16%;
+}
 
 /* Course Details & FAQ's =================================================================================================== */
 
@@ -202,7 +271,8 @@ html {
     margin-right: 15px;
 }
 
-/* Feedback =================================================================================================== */
+/* Feedback 
+=================================================================================================== */
 
 .feedback h3{
     font-weight: 500;
@@ -232,7 +302,8 @@ html {
 	font-weight: 400;
 }
 
-/* Reviews & Rating =================================================================================================== */
+/* Reviews & Rating 
+=================================================================================================== */
 
 .randr h3{
     font-weight: 500;
@@ -275,7 +346,8 @@ html {
 	color: #fdb300;
 }
 
-/* Reviews & Rating =================================================================================================== */
+/* Trainees
+=================================================================================================== */
 
 .trainees h3{
     font-weight: 500;
