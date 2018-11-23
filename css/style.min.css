@@ -222,6 +222,36 @@ html {
     width: 16%;
 }
 
+.course-schedule .cs-tracks h5{
+    font-weight: 500;
+}
+
+.cs-tracks .cst-dur{
+    border-right: 1px solid #ccc;
+}
+
+.cs-tracks .cs-batch{
+    background-color: #efefef;
+}
+
+.cs-tracks .cs-batch .csb-dm{
+    background-color: #dedede;
+}
+
+.cs-tracks .cs-batch:hover{
+    background-color: #45526ea6;
+    cursor: pointer;
+}
+
+.cs-tracks .cs-batch:hover .csb-dm{
+    background-color: #b6bdd0;
+}
+
+.cs-tracks .cs-batch:hover .csb-wt{
+    color: #fff;
+}
+
+
 /* Course Details & FAQ's =================================================================================================== */
 
 .course-details .card-header, .faqs .card-header {
