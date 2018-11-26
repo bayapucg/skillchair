@@ -17,6 +17,10 @@ p{
 	background-color: #ffffff;
 }
 
+.btn-color{
+    background-color: #59698d !important;
+}
+
 /* Full Page Intro  & Navbar 
 ===================================================================================== */
 
@@ -41,6 +45,10 @@ html {
 
 .navbar.navbar-dark .navbar-nav .nav-item .nav-link {
     font-weight: 500;
+}
+
+.navbar.navbar-dark .navbar-nav .nav-item.active > .nav-link {
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .search-container {
@@ -424,3 +432,134 @@ html {
 	height: 70px;
 	width: 70px;
 }
+
+/* About Us
+=================================================================================================== */
+
+.our-story h3,
+.our-mission h3,
+.our-vision h3,
+.our-values h3{
+    font-weight: 500;
+    padding-bottom: 10px;
+    color: #45526e;
+	position: relative;
+}
+
+.our-story h3:before {
+    content:"";
+	position:absolute;
+    bottom: 0;
+    border-bottom: 2px solid #3e6ac7;
+    width: 6%;
+}
+
+.our-mission h3:before {
+    content:"";
+	position:absolute;
+    bottom: 0;
+    border-bottom: 2px solid #3e6ac7;
+    width: 8%;
+}
+
+.our-vision h3:before {
+    content:"";
+	position:absolute;
+    bottom: 0;
+    border-bottom: 2px solid #3e6ac7;
+    width: 7%;
+}
+
+.our-values h3:before {
+    content:"";
+	position:absolute;
+    bottom: 0;
+    border-bottom: 2px solid #3e6ac7;
+    width: 7%;
+}
+
+.our-values ul li{
+    font-size:17px;
+	font-weight:400;
+	letter-spacing:0.14px;
+}
+
+.our-values ul li:before{
+	content:"\f101";
+    font: normal normal normal 22px/1 FontAwesome;
+	font-size: 15px;
+	margin-right: 10px;
+}
+
+/* Contact Us
+=================================================================================================== */
+
+.contact-form p{
+    font-weight: 500;
+    padding-bottom: 10px;
+    color: #45526e;
+	position: relative;
+}
+
+.contact-form p:before {
+    content:"";
+	position:absolute;
+    bottom: 0;
+    border-bottom: 2px solid #3e6ac7;
+    width: 16%;
+}
+
+.contact-form .form-control:focus {
+    border-color: #fff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0);
+}
+
+.contact-detail{
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.contact-detail .cd-via{
+    width: 25%;
+}
+
+.contact-detail .cd-via .cdv-icon{
+    background-color: #59698d;
+    height: 60px; 
+    width: 60px; 
+    position: relative;
+    color: #ffffff;
+}
+
+.contact-detail .cd-via .cdv-icon1{
+    position: absolute; 
+    top: 30%; 
+    left: 39%;
+    font-size: 22px !important; 
+}
+
+.contact-detail .cd-via .cdv-icon2{
+    position: absolute; 
+    top: 30%; 
+    left: 36%;
+    font-size: 22px !important; 
+}
+
+.contact-detail .cd-via .cdv-icon3{
+    position: absolute; 
+    top: 30%; 
+    left: 33%;    
+    font-size: 20px !important; 
+}
+
+.contact-detail .cd-through{
+    width: 75%;
+}
+
+.contact-detail:hover .cd-via .cdv-icon{
+    background-color: #ffffff;
+    color: #59698d;
+    transform: translateY(-3px);
+    transition: 0.2s ease-in-out; 
+}
+

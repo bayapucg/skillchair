@@ -17,20 +17,13 @@
     <link href="css/mdb.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
     <link href="css/style.min.css" rel="stylesheet">
-    <style type="text/css">
-        @media (min-width: 800px) and (max-width: 850px) {
-            .navbar:not(.top-nav-collapse) {
-                background: #59698d !important;
-            }
-        }
-    </style>
     
 </head>
 
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar mdb-color lighten-1">
         <div class="container">
 
             <!-- Brand -->
@@ -220,7 +213,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="aboutus.html">About Us</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="contactus.html">Contact Us</a>
                     </li>
                 </ul>
@@ -231,58 +224,107 @@
     </nav>
     <!-- Navbar -->
 
-    <!-- Full Page Intro -->
-    <div class="view" style="background-image: url('img/home-banner.jpg'); background-repeat: no-repeat; background-size: cover;">
+    <main style="background-image: url(img/page-background-img.png);">
+        
+        <!-- Contact Details -->
+        <section class="mt-5 pt-5">
+            <div class="container">
 
-        <!-- Mask & flexbox options-->
-        <div class="mask rgba-black-strong d-flex justify-content-center align-items-center">
-
-            <!-- Content -->
-            <div class="text-center white-text mx-5 wow fadeIn">
-                <h2 class="mb-4">
-                    <strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In finibus sodales nisi eu accumsan.</strong>
-                </h2>
-                <div class="search-container">
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" id="tags" placeholder="Search Keywords">
-                        <div class="input-group-append">
-                            <button class="btn btn-lg btn-default m-0 px-3 py-2" type="button">Search</button>
+                <div class="row">
+                    
+                    <!-- Contact Detail 1 -->
+                    <div class="col-md-4">
+                        <div class="row contact-detail">
+                            <div class="cd-via">
+                                <div class="z-depth-1 rounded-circle cdv-icon">
+                                    <i class="fa fa-map-marker fa-2x cdv-icon1"></i>
+                                </div>
+                            </div>
+                            <div class="cd-through">
+                                <h5 class="mt-0 mb-1 font-weight-bold">Location</h5>
+                                <p>Plot no-177, Sri Vani Nilayam, Sardar Patel Nagar, KPHB Colony, Hyderabad, Telangana 500090</p>
+                            </div>
                         </div>
                     </div>
+                    
+                    <!-- Contact Details 2 -->
+                    <div class="col-md-4">
+                        <div class="row contact-detail">
+                            <div class="cd-via">
+                                <div class="z-depth-1 rounded-circle cdv-icon">
+                                    <i class="fa fa-phone fa-2x cdv-icon2"></i>
+                                </div>
+                            </div>
+                            <div class="cd-through">
+                                <h5 class="mt-0 mb-1 font-weight-bold">Phone</h5>
+                                <p class="mb-0">+91 806xxxxx20</p>
+                                <p>+91 806xxxxx20</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Details 3 -->
+                    <div class="col-md-4">
+                        <div class="row contact-detail">
+                            <div class="cd-via">
+                                <div class="z-depth-1 rounded-circle cdv-icon">
+                                    <i class="fa fa-envelope fa-2x cdv-icon3"></i>
+                                </div>
+                            </div>
+                            <div class="cd-through">
+                                <h5 class="mt-0 mb-1 font-weight-bold">Email</h5>
+                                <p class="mb-0">support@sillchair.com</p>
+                                <p>team@sillchair.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
-                <div class="enrollments mt-5">
-                    <ul class="list-inline text-center">
-                        <li class="list-inline-item e-div p-3">
-                            <ul class="list-inline text-center">
-                                <li class="list-inline-item">
-                                    <i class="fa fa-book fa-3x"></i>
-                                </li>
-                                <li class="list-inline-item">
-                                    <strong class="black-text">100+ Courses</strong><br>
-                                    <a href="#">Enroll Now</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="list-inline-item e-div p-3">
-                            <ul class="list-inline text-center">
-                                <li class="list-inline-item">
-                                    <i class="fa fa-building fa-3x"></i>
-                                </li>
-                                <li class="list-inline-item">
-                                    <strong class="black-text">100+ Clients</strong><br>
-                                    <a href="#" class="mt-0">Enroll Now</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div> 
+                
             </div>
-            <!-- Content -->
+        </section>
+        
+        <!-- Contact Us -->
+        <section class="mt-5 pb-5">
+            <div class="container">
 
-        </div>
-        <!-- Mask & flexbox options-->
+                <div class="row">
 
-    </div>
+                    <div class="col-md-7 contact-form">
+                        <!-- Contact Form -->
+                        <form method="" action="">
+                            <p class="h4 mb-4">Get in Touch with Us</p>
+                            <div class="form-group">
+                                <input type="text" id="" class="form-control" placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="" class="form-control" placeholder="E-mail">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="" class="form-control" placeholder="Mobile Number">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" placeholder="Message"></textarea>
+                            </div>
+                            <div class="text-right">
+                                <button class="btn btn-info btn-md btn-color" type="submit">
+                                    <i class="fa fa-paper-plane mr-1"></i> Submit
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="col-md-5">
+                        <!-- Map Location -->
+                        <iframe class="z-depth-1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30884.089210476883!2d78.39609819323411!3d17.499699017256685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9188ffffffff%3A0x9ab8c5c20aa5ec5a!2sPracha+Technologies!5e0!3m2!1sen!2sin!4v1537964294069" width="100%" height="335" frameborder="0" allowfullscreen></iframe>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    
+    </main>
 
     <!-- Fixed Footer -->
     <footer class="page-footer font-small fixed-bottom mdb-color darken-4">
@@ -335,39 +377,6 @@
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
     <!-- Initializations -->
-    <script type="text/javascript">
-    
-  $( function() {
-    var availableTags = [
-      "ActionScript",
-      "AppleScript",
-      "Asp",
-      "BASIC",
-      "C",
-      "C++",
-      "Clojure",
-      "COBOL",
-      "ColdFusion",
-      "Erlang",
-      "Fortran",
-      "Groovy",
-      "Haskell",
-      "Java",
-      "JavaScript",
-      "Lisp",
-      "Perl",
-      "PHP",
-      "Python",
-      "Ruby",
-      "Scala",
-      "Scheme"
-    ];
-    $( "#tags" ).autocomplete({
-      source: availableTags
-    });
-  } );
-
-    </script> 
 	<script type="text/javascript">
         // Animations initialization
         new WOW().init();
