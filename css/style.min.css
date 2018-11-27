@@ -570,6 +570,24 @@ p{
 /* About Us
 =================================================================================================== */
 
+.aboutus-bg{
+    background-image: url(../img/aboutus1.jpg);
+    background-size: cover;
+    height: 227px;
+}
+
+.au-bg-overlay{
+    background-color: rgba(0, 0, 0, .6);
+    height: 227px;
+}
+
+.aboutus-bg h1{
+    color: #ffffff;
+    font-weight: 600;
+    margin: auto;
+    font-size: 50px;
+}
+
 .our-values ul li{
     font-size:17px;
 	font-weight:400;
@@ -583,8 +601,35 @@ p{
 	margin-right: 10px;
 }
 
+@media only screen and (max-width:768px){
+    .aboutus-bg{
+        background-image: url(../img/aboutus2.jpg);
+    }
+    .aboutus-bg h1{
+        font-size: 45px;
+    }
+}
+
 /* Contact Us
 =================================================================================================== */
+
+.contactus-bg{
+    background-image: url(../img/contactus1.jpg);
+    background-size: cover;
+    height: 227px;
+}
+
+.cu-bg-overlay{
+    background-color: rgba(0, 0, 0, .6);
+    height: 227px;
+}
+
+.contactus-bg h1{
+    color: #ffffff;
+    font-weight: 600;
+    margin: auto;
+    font-size: 50px;
+}
 
 .contact-form .form-control:focus {
     border-color: #fff;
@@ -640,3 +685,11 @@ p{
     transition: 0.2s ease-in-out; 
 }
 
+@media only screen and (max-width:768px){
+    .contactus-bg{
+        background-image: url(../img/contactus2.jpg);
+    }
+    .contactus-bg h1{
+        font-size: 45px;
+    }
+}
