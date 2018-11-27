@@ -1,5 +1,19 @@
+/* Body
+===================================================================================== */
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.view,
+body,
+html {
+    height: 100%
+}
+
+ul,
+li{
+    list-style: none;
 }
 
 p{
@@ -8,6 +22,25 @@ p{
 	letter-spacing:0.14px;
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #59698d; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #1c2331;
+}
 
 .bg-f8f8f8{
 	background-color: #f8f8f8;
@@ -21,14 +54,30 @@ p{
     background-color: #59698d !important;
 }
 
-/* Full Page Intro  & Navbar 
-===================================================================================== */
+@media only screen and (max-width:576px){
+    /* width */
+    ::-webkit-scrollbar {
+        width: 3px;
+    }
 
-.view,
-body,
-html {
-    height: 100%
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: rgba(0, 0, 0, 0);
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #aaa; 
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #1c2331;
+    }
 }
+
+/* Navbar 
+===================================================================================== */
 
 .navbar {
     background-color: rgba(0, 0, 0, 0);
@@ -51,6 +100,175 @@ html {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
+@media only screen and (max-width:992px) {
+    .navbar {
+        background-color: #59698d;
+    }
+    .navbar-collapse.collapse.show{
+        height: 300px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+}
+
+/* Multi DropDown 
+=================================================================================================== */
+
+#navbar-menu-list ul {
+    margin: 0px;
+    padding: 0px;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    z-index: 1;
+    width: 18%;
+    height: auto;
+    background: #fefefe;
+}
+
+.nml-has-dropdown-1:hover .nml-step-1:before{
+    content:"\f0d8";
+    font: normal normal normal 22px/1 FontAwesome;
+    font-size: 30px;
+    color: #ffffff;
+    position: absolute;
+    top: -20px;
+    left: 15px;
+}
+
+#navbar-menu-list li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+    margin: 0;
+}
+
+#navbar-menu-list ul li a {
+    padding: 10px;
+    display: block;
+    color: #59698d;
+    font-weight: 400;
+}
+
+#navbar-menu-list ul li:hover {
+    border-left: 3px solid #59698d;
+    background: #ededed;
+}
+
+#navbar-menu-list ul li:hover > a:before {
+    content:"\f105";
+    font: normal normal normal 22px/1 FontAwesome;
+    right: 10px;
+	position:absolute;
+}
+
+#navbar-menu-list .nml-step-1 .nml-step-2 .nml-step-3 li:hover > a:before {
+    content:"";
+}
+
+#navbar-menu-list ul ul {
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width:992px) {
+    
+    .nml-has-dropdown-1:hover .nml-step-1:before{
+        content:"";
+    }
+    
+    #navbar-menu-list ul {
+        background: #59698d;
+    }
+    
+    #navbar-menu-list ul li:hover {
+        border-left: 0px solid #ffffff;
+        background: #59698d;
+    }
+    
+    #navbar-menu-list ul li a {
+        color: #ffffff;
+        font-weight: 400;
+    }
+    
+    .z-depth-1 {
+        -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0), 0 2px 10px 0 rgba(0, 0, 0, 0);
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0), 0 2px 10px 0 rgba(0, 0, 0, 0);
+    }
+    
+    .z-depth-2 {
+        -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0), 0 2px 10px 0 rgba(0, 0, 0, 0);
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0), 0 2px 10px 0 rgba(0, 0, 0, 0);
+    }
+    
+    .z-depth-3 {
+        -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0), 0 2px 10px 0 rgba(0, 0, 0, 0);
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0), 0 2px 10px 0 rgba(0, 0, 0, 0);
+    }
+    
+    #navbar-menu-list li.nml-has-dropdown-1 ul.nml-step-1{
+        position: relative;
+        width: 90%;
+        visibility: visible;
+        opacity: 1;
+        height: auto;
+        left: 10%;
+    }
+    
+    #navbar-menu-list li.nml-has-dropdown-2:hover > a{
+        background: rgba(221, 221, 221, 0.10);
+    }
+    
+    #navbar-menu-list li.nml-has-dropdown-2:hover ul.nml-step-2 {
+        position: relative;
+        visibility: visible;
+        opacity: 1;
+        width: 90%;
+        left: 10%;
+    }
+    
+    #navbar-menu-list li.nml-has-dropdown-3:hover > a{
+        background: rgba(221, 221, 221, 0.30);
+    }
+    
+    #navbar-menu-list li.nml-has-dropdown-3:hover ul.nml-step-3 {
+        position: relative;
+        visibility: visible;
+        opacity: 1;
+        width: 90%;
+        left: 10%;
+    }
+    
+    #navbar-menu-list ul li a:before {
+        content:"\f105";
+        font: normal normal normal 22px/1 FontAwesome;
+        margin-right: 10px;
+    }
+    
+    #navbar-menu-list .nml-step-1 .nml-step-2 .nml-step-3 li a:before {
+        content:"";
+        margin-right: 0px;
+    }
+    
+    #navbar-menu-list ul li:hover > a:before {
+        content:"\f107";
+        font: normal normal normal 22px/1 FontAwesome;
+        right: 10px;
+        position:absolute;
+    }
+
+}
+
+/* Full Page Intro  & Navbar 
+===================================================================================== */
+
+.banner-body{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
 .search-container {
     width: 50%;
     margin: auto;
@@ -70,10 +288,10 @@ html {
 }
 
 @media only screen and (max-width:768px) {
-    .navbar {
-        background-color: #1C2331;
+    .banner-body{
+        margin-left: 10px;
+        margin-right: 10px;
     }
-
     .search-container {
         width: 100%;
     }
@@ -82,9 +300,18 @@ html {
 /* Enrollments
 ===================================================================================================== */
 
+.enrollments{
+    margin-top: 40px;
+}
+
+.enrollments > ul{
+    text-align: center;
+}
+
 .enrollments .e-div{
     background-color: #f1f1f1;
     border-radius: 5px;
+    padding: 10px;
 }
 
 .enrollments .e-div i{
@@ -106,57 +333,22 @@ html {
     text-decoration-color: #59698d;
 }
 
+@media only screen and (max-width:768px) {
+    .enrollments > ul{
+        text-align: center;
+    }
+    .enrollments .e-div{
+        width: 45%;
+    }
+    .enrollments .e-div li{
+        margin-right: 0px;
+    }
+}
 
 /* Fixed Footer ===================================================================================================== */
 
 .footer-back-color {
     background-color: #210e00;
-}
-
-/* Multi DropDown =================================================================================================== */
-
-#mbl-menu ul {
-    margin: 0px;
-    padding: 0px;
-    opacity: 0;
-    visibility: hidden;
-    position: absolute;
-    z-index: 1;
-    width: 18%;
-    height: auto;
-    background: #fefefe;
-}
-
-#mbl-menu li:hover > ul {
-    opacity: 1;
-    visibility: visible;
-    margin: 0;
-}
-
-#mbl-menu ul li a {
-    padding: 10px;
-    display: block;
-    color: #59698d;
-    font-weight: 400;
-}
-
-#mbl-menu ul li:hover {
-    border-left: 3px solid #59698d;
-    background: #ededed;
-}
-
-#mbl-menu ul li:hover > a:before {
-    content:"\f105";
-    font: normal normal normal 22px/1 FontAwesome;
-    right: 10px;
-	position:absolute;
-}
-
-#mbl-menu ul ul {
-    top: 0;
-    left: 100%;
-    width: 100%;
-    height: 100%;
 }
 
 /* Category Header
@@ -195,24 +387,32 @@ html {
     color: #fdb300;
 }
 
-
-/* Category Details
+/* Heading Style
 =================================================================================================== */
 
-.category-details h3{
+.heading{
     font-weight: 500;
     padding-bottom: 10px;
     color: #45526e;
 	position: relative;
 }
 
-.category-details h3:before {
+.heading:before {
     content:"";
 	position:absolute;
     bottom: 0;
-    border-bottom: 2px solid #3e6ac7;
-    width: 26%;
+    border-bottom: 3px solid #59698d;
+    width: 6%;
 }
+
+@media only screen and (max-width: 768px){
+    .heading:before {
+        width: 12%;
+    }
+}
+
+/* Category Details
+=================================================================================================== */
 
 .cd-part-1 p{
 	font-weight: 400;
@@ -244,21 +444,6 @@ html {
 
 /* Course Schedule
 =================================================================================================== */
-
-.course-schedule h3{
-    font-weight: 500;
-    padding-bottom: 10px;
-    color: #45526e;
-	position: relative;
-}
-
-.course-schedule h3:before {
-    content:"";
-	position:absolute;
-    bottom: 0;
-    border-bottom: 2px solid #3e6ac7;
-    width: 16%;
-}
 
 .course-schedule .cs-tracks h5{
     font-weight: 500;
@@ -293,15 +478,8 @@ html {
 /* Course Details & FAQ's =================================================================================================== */
 
 .course-details .card-header, .faqs .card-header {
-    background-color: rgba(69, 82, 110, 0.65);
+    background-color: #6a799c;
 	border-radius: 0px;
-}
-
-.course-details h3, .faqs h3{
-    font-weight: 500;
-    padding-bottom: 10px;
-    position: relative;
-    color: #45526e;
 }
 
 .course-details h6, .faqs h6{
@@ -310,27 +488,11 @@ html {
     color: #ffffff;
 }
 
-.course-details h3:before {
-    content:"";
-	position:absolute;
-    bottom: 0;
-    border-bottom: 2px solid #3e6ac7;
-    width: 24%;
-}
-
 .course-details h6:before {
     content:"\f107";
     font: normal normal normal 22px/1 FontAwesome;
     right: 10px;
 	position:absolute;
-}
-
-.faqs h3:before {
-    content:"";
-	position:absolute;
-    bottom: 0;
-    border-bottom: 2px solid #3e6ac7;
-    width: 30%;
 }
 
 .faqs h6:before {
@@ -341,21 +503,6 @@ html {
 
 /* Feedback 
 =================================================================================================== */
-
-.feedback h3{
-    font-weight: 500;
-    padding-bottom: 10px;
-    color: #45526e;
-	position: relative;
-}
-
-.feedback h3:before {
-    content:"";
-	position:absolute;
-    bottom: 0;
-    border-bottom: 2px solid #3e6ac7;
-    width: 24%;
-}
 
 .feedback .media img{
 	height: 70px;
@@ -369,27 +516,12 @@ html {
 /* Reviews & Rating 
 =================================================================================================== */
 
-.randr h3{
-    font-weight: 500;
-    padding-bottom: 10px;
-    color: #45526e;
-	position: relative;
-}
-
-.randr h3:before {
-    content:"";
-	position:absolute;
-    bottom: 0;
-    border-bottom: 2px solid #3e6ac7;
-    width: 13%;
-}
-
 .rating-div{
 	padding: 0px 15px;
 }
 
 .rating-div .ratings-percent{
-	background-color: #868ea1;
+	background-color: #6a799c;
 }
 
 .ratings-percent h1{
@@ -400,6 +532,7 @@ html {
 .ratings-percent p{
 	font-weight: 500;
 	font-size: 20px;
+    color: #f1f1f1 !important;
 }
 
 .ratings-percent li{
@@ -410,73 +543,32 @@ html {
 	color: #fdb300;
 }
 
+.rating-bars .star-rating{
+    text-align: right;
+}
+
+.star-rating strong{
+    font-weight: 500;
+}
+
+@media only screen and (max-width:768px){
+    .rating-bars .star-rating{
+        text-align: left;
+    }
+}
+
 /* Trainees
 =================================================================================================== */
-
-.trainees h3{
-    font-weight: 500;
-    padding-bottom: 10px;
-    color: #45526e;
-	position: relative;
-}
-
-.trainees h3:before {
-    content:"";
-	position:absolute;
-    bottom: 0;
-    border-bottom: 2px solid #3e6ac7;
-    width: 6%;
-}
 
 .trainee-logos img{
 	height: 70px;
 	width: 70px;
+    margin-right: 4px;
+    margin-left: 4px;
 }
 
 /* About Us
 =================================================================================================== */
-
-.our-story h3,
-.our-mission h3,
-.our-vision h3,
-.our-values h3{
-    font-weight: 500;
-    padding-bottom: 10px;
-    color: #45526e;
-	position: relative;
-}
-
-.our-story h3:before {
-    content:"";
-	position:absolute;
-    bottom: 0;
-    border-bottom: 2px solid #3e6ac7;
-    width: 6%;
-}
-
-.our-mission h3:before {
-    content:"";
-	position:absolute;
-    bottom: 0;
-    border-bottom: 2px solid #3e6ac7;
-    width: 8%;
-}
-
-.our-vision h3:before {
-    content:"";
-	position:absolute;
-    bottom: 0;
-    border-bottom: 2px solid #3e6ac7;
-    width: 7%;
-}
-
-.our-values h3:before {
-    content:"";
-	position:absolute;
-    bottom: 0;
-    border-bottom: 2px solid #3e6ac7;
-    width: 7%;
-}
 
 .our-values ul li{
     font-size:17px;
@@ -493,21 +585,6 @@ html {
 
 /* Contact Us
 =================================================================================================== */
-
-.contact-form p{
-    font-weight: 500;
-    padding-bottom: 10px;
-    color: #45526e;
-	position: relative;
-}
-
-.contact-form p:before {
-    content:"";
-	position:absolute;
-    bottom: 0;
-    border-bottom: 2px solid #3e6ac7;
-    width: 16%;
-}
 
 .contact-form .form-control:focus {
     border-color: #fff;
@@ -559,7 +636,7 @@ html {
 .contact-detail:hover .cd-via .cdv-icon{
     background-color: #ffffff;
     color: #59698d;
-    transform: translateY(-3px);
+    transform: translateY(-4px);
     transition: 0.2s ease-in-out; 
 }
 
