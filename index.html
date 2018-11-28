@@ -263,17 +263,6 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="list-inline-item e-div">
-                            <ul class="list-inline text-center">
-                                <li class="list-inline-item">
-                                    <i class="fa fa-building fa-3x"></i>
-                                </li>
-                                <li class="list-inline-item">
-                                    <strong class="black-text">100+ Clients</strong><br>
-                                    <a href="#" class="mt-0">Enroll Now</a>
-                                </li>
-                            </ul>
-                        </li>
                     </ul>
                 </div> 
             </div>
@@ -281,7 +270,7 @@
 
         </div>
         <!-- Mask & flexbox options-->
-
+        
     </div>
 
     <!-- Fixed Footer -->
@@ -323,7 +312,79 @@
             </div>
         </div>
     </footer>
+    
+    <!-- On Load Modal -->
+    <div class="modal fade joinus-form" id="joinUsForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            
+            <!-- Modal Starts -->
+            <div class="modal-content">
+                <div class="modal-body">
+                    
+                    <!-- Modal Body -->
+                    <div class="container-fluid">
+                        <div class="row">
+                            
+                            <!-- Left Side Content -->
+                            <div class="col-md-5 juf-content">
+                                <div class="p-5">
+                                    <p>“ Top highly paid job courses”</p>
+                                    <p>For contact 985xxxxx20</p>
+                                </div>
+                                <div class="jufc-logo text-center">
+                                    <img src="img/logo.png" alt="Skills Chair" height="30px" />
+                                </div>
+                            </div>
+                            
+                            <!-- Right Side Form -->
+                            <div class="col-md-7 juf-form-fields pl-5 pr-5 pt-4 pb-4">
 
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title heading w-75">Write to us</h4>
+
+                                <div class="md-form form-group">
+                                    <input type="text" id="ff-name" class="form-control">
+                                    <label for="ff-name">Full Name</label>
+                                </div>
+
+                                <div class="md-form form-group">
+                                    <input type="text" id="ff-cname" class="form-control">
+                                    <label for="ff-cname">Course Name</label>
+                                </div>
+
+                                <div class="md-form form-group">
+                                    <input type="email" id="ff-email" class="form-control">
+                                    <label for="ff-email">Email Address</label>
+                                </div>
+
+                                <div class="md-form form-group">
+                                    <input type="text" id="ff-number" class="form-control">
+                                    <label for="ff-number">Phone Number</label>
+                                </div>
+
+                                <div class="md-form form-group">
+                                    <textarea type="text" id="ff-msg" class="md-textarea form-control"></textarea>
+                                    <label for="ff-msg">Message</label>
+                                </div>
+
+                                <div class="d-flex justify-content-center">
+                                    <button class="btn btn-color btn-md">Submit <i class="fa fa-paper-plane-o ml-1"></i></button>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    
     <!-- SCRIPTS -->
     <!-- JQuery -->
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
@@ -334,6 +395,7 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
+    
     <!-- Initializations -->
     <script type="text/javascript">
     
@@ -368,11 +430,13 @@
   } );
 
     </script> 
-	<script type="text/javascript">
+	
+    <script type="text/javascript">
         // Animations initialization
         new WOW().init();
     </script>
-
+    
+    <!-- Hoverable Dropdown -->
     <script type="text/javascript">
         $(function() {
             if ($.browser.msie && $.browser.version.substr(0, 1) < 7) {
@@ -383,6 +447,17 @@
                 });
             };
         });
+    </script>
+    
+    <!-- OnLoad Modal -->
+    <script type="text/javascript">
+        $(window).on('load',function(){
+            var delayMs = 1500; // delay in milliseconds
+
+            setTimeout(function(){
+                $('#joinUsForm').modal('show');
+            }, delayMs);
+        });   
     </script>
 
 </body>

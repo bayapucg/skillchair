@@ -50,6 +50,10 @@ p{
 	background-color: #ffffff;
 }
 
+.bg-212121{
+    background-color: #212121 !important;
+}
+
 .btn-color{
     background-color: #59698d !important;
 }
@@ -89,7 +93,7 @@ p{
 }
 
 .top-nav-collapse {
-    background-color: #59698d;
+    background-color: #212121;
 }
 
 .navbar.navbar-dark .navbar-nav .nav-item .nav-link {
@@ -102,7 +106,7 @@ p{
 
 @media only screen and (max-width:992px) {
     .navbar {
-        background-color: #59698d;
+        background-color: #212121;
     }
     .navbar-collapse.collapse.show{
         height: 300px;
@@ -411,6 +415,29 @@ p{
     }
 }
 
+/* Why Skill Chair
+=================================================================================================== */
+
+.wsc-points li{
+	font-weight: 400;
+    font-size: 17px;
+    margin-bottom: 8px;
+    padding: 0px;
+}
+
+.wsc-points li:hover{
+    transform: translateY(-2px);
+    transition: 0.2s ease-in-out;
+    font-weight: 500;
+}
+    
+.wsc-points li:before{
+	content:"\f101";
+    font: normal normal normal 22px/1 FontAwesome;
+	font-size: 15px;
+	margin-right: 10px;
+}
+
 /* Category Details
 =================================================================================================== */
 
@@ -477,12 +504,12 @@ p{
 
 /* Course Details & FAQ's =================================================================================================== */
 
-.course-details .card-header, .faqs .card-header {
+.course-details .card-header, .interview-q .card-header {
     background-color: #6a799c;
 	border-radius: 0px;
 }
 
-.course-details h6, .faqs h6{
+.course-details h6, .interview-q h6{
     font-weight: 500;
     font-size: 1.1rem;
     color: #ffffff;
@@ -495,7 +522,7 @@ p{
 	position:absolute;
 }
 
-.faqs h6:before {
+.interview-q h6:before {
     content:"\f055";
     font: normal normal normal 22px/1 FontAwesome;
     margin-right: 15px;
@@ -567,6 +594,10 @@ p{
     margin-left: 4px;
 }
 
+.trainee-logos img.img-thumbnail {
+    background-color: #6a799c;
+}
+
 /* About Us
 =================================================================================================== */
 
@@ -577,7 +608,7 @@ p{
 }
 
 .au-bg-overlay{
-    background-color: rgba(0, 0, 0, .6);
+    background-color: rgba(0, 0, 0, .4);
     height: 227px;
 }
 
@@ -693,3 +724,52 @@ p{
         font-size: 45px;
     }
 }
+
+
+/* Home Page Modal
+=================================================================================================== */
+
+.joinus-form .modal-body, 
+.joinus-form .modal-body .container-fluid,
+.joinus-form .modal-body .container-fluid .col-7{
+    padding: 0px;
+}
+
+.juf-content{
+    background-color: #6a799c;
+    position: relative;
+}
+
+.juf-content p{
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.juf-content .jufc-logo img{
+    position: absolute;
+    bottom: 10%;
+    left: 20%;
+}
+
+.juf-form-fields .md-form .form-control:focus:not([readonly]){
+    -webkit-box-shadow: 0 1px 0 0 #6a799c;
+    box-shadow: 0 1px 0 0 #6a799c;
+    border-bottom: 1px solid #6a799c;
+}
+
+.juf-form-fields .md-form label{
+    font-weight: 400;
+}
+
+.juf-form-fields .md-form .form-control:focus:not([readonly]) + label{
+    color: #6a799c;
+    font-weight: 400;
+}
+
+@media only screen and (max-width:768px){
+    .juf-content{
+        display: none;
+    }
+}
+
