@@ -4,10 +4,8 @@
 <body class="" style="background-image:url('assets/img/mobile-background.png');background-size:cover;">
     <div class="container">
         <div class="login-content mx-auto mt-5 pt-5">
-            <div class="login-logo">
-                <a href="#">
-                    <img class="align-content" src="assets/img/logo.png" alt="">
-                </a>
+                <div class="login-logo" style="background-color:#083c64;padding:10px;">
+                <img width="250px;" class="align-content" src="assets/img/logo.png" alt="Skillchair">
             </div>
             <div class="login-form">
                 <form action="" method="" id="forgot_pass">
