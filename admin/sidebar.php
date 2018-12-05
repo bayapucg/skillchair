@@ -15,6 +15,15 @@
                     <a href="index.php"> <i class="menu-icon fa fa-dashboard"></i>Dashboard </a>
                 </li>
                 <li>
+                    <a href="summernote.php"> <i class="menu-icon fa fa-dashboard"></i>Summernote </a>
+                </li> 
+				<li>
+                    <a href="dynamic-row.php"> <i class="menu-icon fa fa-dashboard"></i>dynamic row </a>
+                </li> 
+				<li>
+                    <a href="dynamic-datepicker.php"> <i class="menu-icon fa fa-dashboard"></i>dynamic Datepicker </a>
+                </li> 
+				<li>
                     <a href="validations.php"> <i class="menu-icon fa fa-dashboard"></i>Validations </a>
                 </li>
                 <li class="menu-item-has-children dropdown">
